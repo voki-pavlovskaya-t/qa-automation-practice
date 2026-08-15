@@ -1,0 +1,26 @@
+# Напиши программу, которая на основе списка пройденных уровней
+# completed_levels подсчитывает, сколько раз игрок проходил каждый
+# уровень, и сохраняет результат в словарь level_attempts (ключ —
+# название уровня, значение — количество прохождений). Выведи
+# получившийся словарь. Проверь через in, встречается ли в словаре
+# уровень "level_4", и выведи соответствующее сообщение. Затем через
+# цикл for выведи для каждого уровня отдельную строку вида:
+# "level_1 был пройден 3 раз(а)".
+
+completed_levels = ["level_1", "level_1", "level_2", "level_2", "level_2", "level_3"]
+level_attempts = {}
+
+for lev in completed_levels:
+    if lev in level_attempts:
+        level_attempts[lev] += 1
+    else:
+        level_attempts[lev] = 1
+
+print(level_attempts)
+if "level_4" in level_attempts:
+    print("level 4 is in dict")
+else:
+    print("no level 4 in dict")
+
+for key, value in level_attempts.items():
+    print(f"{key} был пройден {value} раз(а)")
