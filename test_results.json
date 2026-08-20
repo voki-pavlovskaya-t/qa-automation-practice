@@ -1,0 +1,8 @@
+[
+  {"test_case": "login","status": "passed", "time": 3},
+  {"test_case": "start_event","status": "passed", "time": 0.5},
+  {"test_case": "start_competition","status": "passed", "time": 0.7},
+  {"test_case": "get points","status": "failed", "time": 5},
+  {"test_case": "get_key","status": "passed", "time": 8},
+  {"test_case": "get_reward","status": "failed", "time": 7}
+]
